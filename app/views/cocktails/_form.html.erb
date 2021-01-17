@@ -1,4 +1,4 @@
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
+<%= simple_form_for @cocktail, html: {class: 'form-inline'} do |f| %>
+  <%= f.input :name, label: false, placeholder: "What's missing?" %>
+  <%= f.submit "Add it" %>
 <% end %>

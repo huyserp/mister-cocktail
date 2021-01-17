@@ -1,0 +1,41 @@
+body {
+  background-color: #325557;
+}
+h1 {
+  color: #AC9E74;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
+}
+
+#title {
+  font-size: 64px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  line-height: 2em;
+  text-shadow: 0 4px 48px white;
+  margin-left: 40vh;
+}
+
+.form-new-cocktail {
+  width: 300px;
+  margin-left: 40vh;
+}
+
+p, a {
+  color: #325557;
+}
+
+input {
+  margin: 8px;
+}
+
