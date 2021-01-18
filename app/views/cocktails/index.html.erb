@@ -1,16 +1,20 @@
 <div class="banner">
-  <h1 id="title">COCKTAILS</h1>
+  <div class="banner-content">
+    <h1 id="title">COCKTAILS</h1>
 
-  <div class="form-new-cocktail">
-    <%= render 'form' %>
+    <div class="form-new-cocktail">
+      <%= render 'form' %>
+    </div>
   </div>
 </div>
 <div class="container">
   <div class="grid">
-      <% @cocktails.each do |drink| %>
-        <div class="card">
-          <p><%= link_to drink.name, cocktail_path(drink.id) %></p>
-        </div>
+      <% @cocktails.reverse.each do |drink| %>
+        <%= link_to cocktail_path(drink.id) do %>
+          <div class="card">
+            <p><%= drink.name %></p>
+          </div>
+        <% end %>
       <% end %>
   </div>
 </div>

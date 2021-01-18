@@ -1,6 +1,5 @@
-<%= simple_form_for([@cocktail, @dose]) do |f| %>
-<!-- make these inline inputs... to do.... -->
-  <%= f.association :ingredient %>
-  <%= f.input :description %>
-  <%= f.submit "Add Ingredient", class: 'btn btn-primary' %>
+<%= simple_form_for [@cocktail, @dose], html: { class: 'form-inline' } do |f| %>
+  <%= f.association :ingredient, label: false %>
+  <%= f.input :description, label: false, placeholder: "unit type" %>
+  <%= f.submit "Add Ingredient", class: 'submit' %>
 <% end %>

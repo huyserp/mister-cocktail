@@ -7,6 +7,8 @@
     <% end %>
   </div>
 <% end %>
+<div class="form-new-ingredient">
+  <%= render './doses/form' %>
+</div>
+<%= link_to "Drink List", cocktails_path, {class: "btn-back"} %>
 
-<%= render './doses/form' %>
-<%= link_to "<< All Cocktails", cocktails_path, {class: "btn btn-primary"} %>

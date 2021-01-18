@@ -1,8 +1,8 @@
 body {
-  background-color: #325557;
+  background-color: $green;
 }
-h1 {
-  color: #AC9E74;
+h1, p {
+  color: $gold;
 }
 
 .flex {
@@ -17,25 +17,19 @@ h1 {
   grid-gap: 32px;
 }
 
+.banner-content {
+  // width:
+}
+
 #title {
-  font-size: 64px;
-  letter-spacing: 8px;
+  font-size: 96px;
+  letter-spacing: 16px;
   font-weight: bold;
   line-height: 2em;
   text-shadow: 0 4px 48px white;
-  margin-left: 40vh;
+  margin-left: 27%;
 }
 
-.form-new-cocktail {
-  width: 300px;
-  margin-left: 40vh;
+a:hover {
+  text-decoration: none;
 }
-
-p, a {
-  color: #325557;
-}
-
-input {
-  margin: 8px;
-}
-
