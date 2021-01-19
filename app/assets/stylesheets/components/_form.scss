@@ -1,20 +1,21 @@
-.form-new-cocktail {
+.new-cocktail {
   width: 600px;
   margin-left: 27%;
-  // border: 1px solid red;
+  form {
+    input {
+      margin: ($spacer * 3);
+    }
+  }
 }
 
-.form-new-ingredient {
-  // width: 800px;
+
+.all-ingredients form {
+  padding: 0 150px;
+  input {
+    margin: $spacer ($spacer * 5);
+  }
 }
 
-form {
-  // border: 1px solid red;
-}
-
-input {
-  margin: $spacer;
-}
 
 .submit {
   background-color: $gold;

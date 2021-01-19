@@ -1,5 +1,5 @@
 <%= simple_form_for [@cocktail, @dose], html: { class: 'form-inline' } do |f| %>
+  <%= f.submit "Add Ingredient", class: 'submit btn' %>
   <%= f.association :ingredient, label: false %>
   <%= f.input :description, label: false, placeholder: "unit type" %>
-  <%= f.submit "Add Ingredient", class: 'submit' %>
 <% end %>
