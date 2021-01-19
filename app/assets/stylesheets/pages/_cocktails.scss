@@ -16,6 +16,7 @@
 
 
 a .card {
+  text-shadow: 1px 1px 3px white;
   &:hover {
     box-shadow: 2px 4px 15px $gold;
     text-shadow: 1px 1px 3px $gold;
