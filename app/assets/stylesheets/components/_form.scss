@@ -1,10 +1,15 @@
 .form-new-cocktail {
-  width: 400px;
+  width: 600px;
   margin-left: 27%;
+  // border: 1px solid red;
 }
 
 .form-new-ingredient {
-  width: 800px;
+  // width: 800px;
+}
+
+form {
+  // border: 1px solid red;
 }
 
 input {
@@ -29,6 +34,14 @@ input {
   font-size: ($spacer*3);
   padding: ($spacer*1.5);
   border-radius: ($spacer*1.5);
-  color: $pink;
+  color: $gold;
+  &:active, &:focus {
+    background-color: $green;
+    border: none;
+    font-size: ($spacer*3);
+    padding: ($spacer*1.5);
+    border-radius: ($spacer*1.5);
+    color: $gold;
+  }
 }
 

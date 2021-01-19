@@ -1,11 +1,11 @@
 <div class="banner">
-  <div class="banner-content">
     <h1 id="title">COCKTAILS</h1>
-
-    <div class="form-new-cocktail">
+    <div class="form-new-cocktail flex">
       <%= render 'form' %>
+      <% if @change_mind %>
+      <%= link_to "...nevermind", cocktails_path, id: "btn-nvm" %>
+      <% end %>
     </div>
-  </div>
 </div>
 <div class="container">
   <div class="grid">

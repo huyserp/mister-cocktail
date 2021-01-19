@@ -14,10 +14,13 @@ class CocktailsController < ApplicationController
   end
 
   def create
+    @change_mind = nil
+    @cocktails = Cocktail.all
     @cocktail = Cocktail.new(cocktail_params)
     if @cocktail.save
       redirect_to cocktails_path
     else
+      @change_mind = '... I suppose it is possible you didnt see that drink on the list already'
       render :index
     end
   end

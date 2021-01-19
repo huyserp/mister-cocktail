@@ -1,35 +1,23 @@
-body {
-  background-color: $green;
-}
-h1, p {
-  color: $gold;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 32px;
 }
 
-.banner-content {
-  // width:
+#btn-nvm {
+  display: inline-block;
+  margin-left: $spacer;
+  color: $gold;
+  &:hover {
+    text-decoration: none;
+    color: rgba(172, 158, 116, .5)
+  }
 }
 
-#title {
-  font-size: 96px;
-  letter-spacing: 16px;
-  font-weight: bold;
-  line-height: 2em;
-  text-shadow: 0 4px 48px white;
-  margin-left: 27%;
-}
 
-a:hover {
-  text-decoration: none;
+a .card {
+  &:hover {
+    box-shadow: 2px 4px 15px $gold;
+    text-shadow: 1px 1px 3px $gold;
+  }
 }

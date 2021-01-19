@@ -11,3 +11,25 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+  background-color: $green;
+}
+h1, p {
+  color: $gold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
