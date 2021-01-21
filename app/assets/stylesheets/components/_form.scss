@@ -1,15 +1,19 @@
 .new-cocktail {
-  width: 600px;
   margin-left: 27%;
   form {
     input {
-      margin: ($spacer * 3);
+      margin: 8px;
     }
   }
 }
 
+.invalid-feedback {
+  display: none !important;
+}
 
-.all-ingredients form {
+
+.all-ingredients
+form {
   padding: 0 150px;
   input {
     margin: $spacer ($spacer * 5);
@@ -30,14 +34,16 @@
 }
 
 .input {
-  background-color: $green;
+  background-color: transparent;
   border: none;
-  font-size: ($spacer*3);
-  padding: ($spacer*1.5);
+  font-size: ($spacer*2);
+  padding: $spacer;
   border-radius: ($spacer*1.5);
   color: $gold;
   &:active, &:focus {
-    background-color: $green;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $gold;
+    background-color: transparent;
     border: none;
     font-size: ($spacer*3);
     padding: ($spacer*1.5);

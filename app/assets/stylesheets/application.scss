@@ -14,8 +14,11 @@
 
 
 body {
-  background-color: $green;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dmhxxpuuj/image/upload/v1611256922/lvf8ggiwidsspinswe97.jpg');
 }
+
 h1, p {
   color: $gold;
 }

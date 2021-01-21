@@ -15,24 +15,6 @@
   }
 }
 
-.btn {
-  display: inline-block;
-  margin: 8px;
-  background-color: $gold;
-  padding: ($spacer*1.5);
-  border-radius: ($spacer*1.5);
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: ($spacer*2);
-  letter-spacing: 1px;
-  box-shadow: 2px 4px 15px rgba(0,0,0,0.4);
-  &:hover {
-    color: white;
-    box-shadow: 1px 2px 16px $gold;
-  }
-}
-
 .banner {
   h1 {
     width: 400px;

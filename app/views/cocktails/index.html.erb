@@ -11,10 +11,17 @@
   <div class="grid">
       <% @cocktails.reverse.each do |drink| %>
         <%= link_to cocktail_path(drink.id) do %>
+        <% if drink.photo.attached? %>
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path drink.photo.key, crop: :fill %>')">
+            <p><%= drink.name %></p>
+          </div>
+        <% else %>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dmhxxpuuj/image/upload/v1611258498/mnlgm3eabqzjiz4xcgkn.jpg')">
             <p><%= drink.name %></p>
           </div>
         <% end %>
       <% end %>
+    <% end %>
   </div>
 </div>
+
