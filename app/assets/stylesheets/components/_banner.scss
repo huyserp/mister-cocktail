@@ -5,12 +5,23 @@
   padding: 112px 0;
 }
 
+.home-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+
 #title {
-  font-size: 96px;
+  font-size: 144px;
   letter-spacing: 16px;
   font-weight: bold;
   line-height: 2em;
-  text-shadow: 0 4px 48px white;
-  margin-left: 27%;
+  text-shadow: 8px 16px 32px black;
   margin-bottom: 0;
 }

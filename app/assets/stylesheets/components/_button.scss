@@ -15,3 +15,23 @@
     box-shadow: 1px 2px 16px $gold;
   }
 }
+
+#btn-title {
+  text-shadow: 4px 8px 16px black;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  color: $gold;
+  font-weight: bold;
+  font-size: ($spacer*2);
+  letter-spacing: 1px;
+
+  h4, i {
+    font-size: 32px;
+  }
+
+  &:hover {
+    color: white;
+    text-shadow: 4px 8px 16px $gold;
+  }
+}

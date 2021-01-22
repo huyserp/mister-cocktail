@@ -1,13 +1,21 @@
-<div class="banner">
+<div class="home-banner">
+  <div class="banner-content">
     <h1 id="title">COCKTAILS</h1>
-    <div class="new-cocktail flex">
-      <%= render 'form' %>
-      <% if @change_mind %>
-      <%= link_to "...nevermind", cocktails_path, id: "btn-nvm" %>
-      <% end %>
+    <%= link_to root_path(:anchor => "list-start") do %>
+    <div id="btn-title">
+      <h4>View Drink List</h4>
+      <i class="far fa-hand-point-down"></i>
     </div>
+    <% end %>
+  </div>
 </div>
-<div class="container">
+<div id="list-start" class="container">
+  <div class="new-cocktail flex">
+    <%= render 'form' %>
+    <% if @change_mind %>
+    <%= link_to "...nevermind", root_path, id: "btn-nvm" %>
+    <% end %>
+  </div>
   <div class="grid">
       <% @cocktails.reverse.each do |drink| %>
         <%= link_to cocktail_path(drink.id) do %>
