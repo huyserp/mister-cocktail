@@ -16,7 +16,8 @@
 body {
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dmhxxpuuj/image/upload/v1611256922/lvf8ggiwidsspinswe97.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://res.cloudinary.com/dmhxxpuuj/image/upload/v1611256922/lvf8ggiwidsspinswe97.jpg');
+  background-attachment: fixed;
 }
 
 h1, p {
@@ -29,7 +30,7 @@ a:hover {
 
 .flex {
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 

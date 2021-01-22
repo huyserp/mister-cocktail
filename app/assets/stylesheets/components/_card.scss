@@ -1,16 +1,16 @@
 .card {
   background-size: cover;
   background-position: center;
-  background-color: $pink;
+  background-color: rgba(0,0,0,0.4);
   height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px $gold;
   border-radius: 5px;
-  box-shadow: 2px 4px 15px rgba(0,0,0,0.4);
+  box-shadow: 2px 4px 15px black;
 }
 
 .card p {

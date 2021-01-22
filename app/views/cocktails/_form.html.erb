@@ -1,5 +1,10 @@
-<%= simple_form_for @cocktail, html: {class: 'form-inline'} do |f| %>
-  <%= f.submit "Add it", class: 'submit btn', id: 'add-drink' %>
-  <%= f.input :name, label: false, input_html: { class: 'input' }, placeholder: "Add Your Drink" %>
-  <%= f.input :photo, as: :file, label: false, input_html: { class: 'input' } %>
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name, label: false, input_html: { class: 'drink-name-input' }, placeholder: "Add Your Drink" %>
+  <div class="add-drink">
+    <%= f.input :photo, as: :file, label: false %>
+    <%= f.submit "Add it", class: 'form-btn' %>
+  </div>
 <% end %>
+
+
+

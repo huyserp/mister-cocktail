@@ -1,25 +1,28 @@
-<% if @cocktail.photo.attached? %>
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, crop: :fill %>')">
-    <h1><%= @cocktail.name %></h1>
-  </div>
-  <% else %>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dmhxxpuuj/image/upload/v1611258498/mnlgm3eabqzjiz4xcgkn.jpg')">
-  <h1><%= @cocktail.name %></h1>
-</div>
-<% end %>
+
 <div class="container">
-  <div class="all-ingredients">
-    <div class="form-new-ingredient">
-      <%= render './doses/form' %>
-    </div>
-    <% @cocktail.doses.each do |dose| %>
-      <div class="dose-info">
-        <p><%= dose.description %> <%= dose.ingredient.name %></p>
-        <%= link_to dose_path(dose), method: :delete do %>
-            <i class="fas fa-minus"></i>
-        <% end %>
+  <div class="flex">
+    <% if @cocktail.photo.attached? %>
+      <div class="card drink-display" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, crop: :fill %>')">
+        <p><%= @cocktail.name %></p>
+      </div>
+    <% else %>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dmhxxpuuj/image/upload/v1611258498/mnlgm3eabqzjiz4xcgkn.jpg')">
+          <p><%= drink.name %></p>
       </div>
     <% end %>
+    <div class="all-ingredients">
+      <div class="form-new-ingredient">
+        <%= render './doses/form' %>
+      </div>
+      <% @cocktail.doses.each do |dose| %>
+        <div class="dose-info">
+          <p><%= dose.description %> <%= dose.ingredient.name %></p>
+          <%= link_to dose_path(dose), method: :delete do %>
+              <i class="fas fa-minus"></i>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
-  <%= link_to "Back To Drink List", root_path, {class: "btn"} %>
+  <%= link_to "Back To Drink List", cocktails_path(:anchor => "list-start"), {class: "btn"} %>
 </div>

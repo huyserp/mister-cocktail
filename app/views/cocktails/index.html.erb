@@ -1,7 +1,7 @@
 <div class="home-banner">
   <div class="banner-content">
     <h1 id="title">COCKTAILS</h1>
-    <%= link_to root_path(:anchor => "list-start") do %>
+    <%= link_to cocktails_path(:anchor => "list-start") do %>
     <div id="btn-title">
       <h4>View Drink List</h4>
       <i class="far fa-hand-point-down"></i>
@@ -9,14 +9,14 @@
     <% end %>
   </div>
 </div>
-<div id="list-start" class="container">
-  <div class="new-cocktail flex">
+<div class="container">
+  <div class="new-cocktail">
     <%= render 'form' %>
     <% if @change_mind %>
-    <%= link_to "...nevermind", root_path, id: "btn-nvm" %>
+    <%= link_to "...nevermind", cocktails_path, id: "btn-nvm" %>
     <% end %>
   </div>
-  <div class="grid">
+  <div id="list-start" class="grid">
       <% @cocktails.reverse.each do |drink| %>
         <%= link_to cocktail_path(drink.id) do %>
         <% if drink.photo.attached? %>
