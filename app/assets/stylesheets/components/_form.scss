@@ -30,7 +30,7 @@
     }
 
     .drink-name-input {
-      background-color: rgba(0,0,0,.6);
+      background-color: rgba(0,0,0,.5);
       font-size: 32px;
       text-align: center;
       box-shadow: 0 0 0 0.2rem $gold;
@@ -38,7 +38,7 @@
       &:active, &:focus {
         outline: 0;
         box-shadow: 0 0 0 0.2rem $gold;
-        background-color: rgba(0,0,0,.6);
+        background-color: rgba(0,0,0,.5);
         border: none;
         font-size: 32px;
         padding: ($spacer*1.5);
