@@ -20,7 +20,7 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.all
     @cocktail = Cocktail.new(cocktail_params)
     if @cocktail.save
-      redirect_to cocktails_path
+      redirect_to cocktails_path(anchor: 'list-start')
     else
       @change_mind = '... I suppose it is possible you didnt see that drink on the list already'
       render :index
