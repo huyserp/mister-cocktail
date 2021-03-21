@@ -16,7 +16,7 @@
       <%= link_to "...nevermind", cocktails_path, id: "btn-nvm" %>
     <% end %>
   </div>
-  <div id="list-start" class="grid">
+  <div class="grid">
       <% @cocktails.reverse.each do |drink| %>
         <%= link_to cocktail_path(drink.id) do %>
         <% if drink.photo.attached? %>
