@@ -10,10 +10,9 @@
   </div>
 </div>
 <div class="container">
-  <div class="new-cocktail">
+  <div class="new-cocktail" id="list-start">
     <%= render 'form' %>
     <% if @change_mind %>
-      <%= link_to "...nevermind", cocktails_path, id: "btn-nvm" %>
     <% end %>
   </div>
   <div class="grid">

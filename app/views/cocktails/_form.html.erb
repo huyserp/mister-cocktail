@@ -1,5 +1,5 @@
 <%= simple_form_for @cocktail, remote: true do |f| %>
-  <%= f.input :name, label: false, input_html: { class: 'drink-name-input', id: 'list-start' }, placeholder: "Add Your Drink" %>
+  <%= f.input :name, label: false, input_html: { class: 'drink-name-input' }, placeholder: "Add Your Drink" %>
   <div class="add-drink">
     <%= f.input :photo, as: :file, label: false %>
     <%= f.submit "Add it", class: 'form-btn' %>
