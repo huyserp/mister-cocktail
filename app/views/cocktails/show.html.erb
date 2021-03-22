@@ -6,7 +6,7 @@
         <p><%= @cocktail.name %></p>
       </div>
     <% else %>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/500x400/?cocktails')">
+      <div class="card drink-display" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/500x400/?cocktails')">
           <p><%= @cocktail.name %></p>
       </div>
     <% end %>
@@ -23,6 +23,6 @@
         </div>
       <% end %>
     </div>
+    <%= link_to "Back To Drink List", cocktails_path(:anchor => "list-start"), {class: "btn"} %>
   </div>
-  <%= link_to "Back To Drink List", cocktails_path(:anchor => "list-start"), {class: "btn"} %>
 </div>
